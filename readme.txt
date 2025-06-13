@@ -1,3 +1,6 @@
+# Kaggle competition - Spaceship Titanic
+■ Predict which passengers are transported to an alternate dimension
+
 一、開發環境 
 
 Python (Google Colab)   
