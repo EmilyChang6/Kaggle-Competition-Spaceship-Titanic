@@ -42,7 +42,7 @@ Python (Google Colab)
 
 使用 sklearn.metrics 中的评估指標 (accuracy_score, recall_score, precision_score, f1_score, roc_auc_score) 和混淆矩陣。
 
-### 4. Final result 
+### 4. Final result (Score : 0.80827)
 
 將 test.csv 代入模型，進行分類預測:  
 ```predictions = model.predict(test)  
@@ -50,3 +50,4 @@ Python (Google Colab)
   submit['Transported'] = predictions  
   submit['Transported'] = submit['Transported']>0.5       #結果轉換為True/False   
   submit.to_csv('final_result.csv', index=False)          #寫入CSV檔
+
