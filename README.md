@@ -6,11 +6,11 @@ Python (Google Colab)
 
 ## 二、執行方式 
 
-1. Data preprocessing
+### 1. Data preprocessing
 
 使用 pd.read_csv() 讀取 train.csv 和 test.csv，並合併檔案進行EDA分析與補缺失值處理。
 
-2. Model fitting
+### 2. Model fitting
  
 (1) 輸入: x_train shape: (6954, 10)
           x_valid shape:  (1739, 10)
@@ -38,11 +38,11 @@ Python (Google Colab)
     model = XGBClassifier(**best_params, random_state=0)
     model.fit(x_train, y_train, eval_set=[(x_valid, y_valid)], verbose=False)
 
-## 3. Model Evaluation
+### 3. Model Evaluation
 
 使用 sklearn.metrics 中的评估指標 (accuracy_score, recall_score, precision_score, f1_score, roc_auc_score) 和混淆矩陣。
 
-## 4. Final result 
+### 4. Final result 
 
 將 test.csv 代入模型，進行分類預測:  
 ```predictions = model.predict(test)  
